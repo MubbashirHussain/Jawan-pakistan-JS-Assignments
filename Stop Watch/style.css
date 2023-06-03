@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+.btnBox,
+.time_name,
+.time_Count,
+.main-container,
+.stop_watch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    background: #fafafa;
+}
+
+.main-container>* {
+    margin: 20px;
+}
+
+.main-container {
+    flex-wrap: wrap;
+}
+
+.stop_watch {
+    max-width: 500px;
+    max-height: 70vh;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px #00000009;
+}
+
+.stop_watch>*,
+.stop_watch>*>* {
+    margin: 20px;
+}
+
+.time_Count>* ,.time_name>*{
+    margin: 0 10px;
+}
+
+.stop_watch>div button {
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid;
+    cursor: pointer;
+    color: #fff;
+    background: #ffffa3;
+}
+
+.stop_watch>div button:nth-child(2) {
+    background: #01a0ae;
+}
+
+.stop_watch>div button:nth-child(1) {
+    background: #2bb102;
+}
+
+.stop_watch>div button:nth-child(3) {
+    background: #d31d01;
+}
+
+.Timer_Count input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.Timer_Count input {
+    padding: 5px;
+    width: 30px;
+    outline: transparent;
+    cursor: pointer;
+}
+.time_Count p {
+    border: 1px solid gray;
+    padding: 5px;
+    font-size: 0.8rem;
+    border-radius: 2px;
+}

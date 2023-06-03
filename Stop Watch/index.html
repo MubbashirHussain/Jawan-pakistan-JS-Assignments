@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>stop watch</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="stop_watch">
+      <h2>Stop Watch</h2>
+      <div class="time">
+        <div class="time_name">
+          <p>Hour</p>
+          <p>Mint</p>
+          <p>Sec</p>
+          <p>Milsec</p>
+        </div>
+        <div class="time_Count">
+          <p id="Hour">00</p>
+          <p id="Mint">00</p>
+          <p id="Sec">00</p>
+          <p id="Milsec">00</p>
+
+        </div>
+        <div class="btnBox">
+          <button id="StartBtn"  onclick="StartBtn()">Start</button>
+          <button id="StopBtn" onclick="StopBtn()">Stop</button>
+          <button id="ResetBtn" onclick="ResetBtn()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="stop_watch">
+      <h2>Timer</h2>
+      <div class="time">
+        <div class="time_name">
+          <p>Hour</p>
+          <p>Mint</p>
+          <p>Sec</p>
+          <p>Milsec</p>
+        </div>
+        <div class="Timer_Count time_Count">
+          <input type="number" maxlength="2" value="00" id="timer-Hour">
+          <input type="number" maxlength="2" value="00" id="timer-Mint">
+          <input type="number" maxlength="2" value="00" id="timer-Sec">
+          <input type="number" maxlength="2" value="00" id="timer-Milsec">
+
+        </div>
+        <div class="btnBox">
+          <button id="timer_StartBtn"  onclick="timer_StartBtn()">Play</button>
+          <button id="timer_StopBtn" onclick="timer_StopBtn()">Pause</button>
+          <button id="timer_ResetBtn" onclick="timer_ResetBtn()">Reset</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
